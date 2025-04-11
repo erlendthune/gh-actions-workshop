@@ -3,7 +3,8 @@ name: CI
 on:
   pull_request:
     types: [opened]
-
+    paths-ignore:
+      - '**/*.md'
 jobs:
   build:
     name: Build
